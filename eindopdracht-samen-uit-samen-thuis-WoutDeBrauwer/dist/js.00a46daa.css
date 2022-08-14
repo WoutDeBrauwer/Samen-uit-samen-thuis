@@ -1,0 +1,1073 @@
+/**
+ *  Typography
+ */
+@import url("https://use.typekit.net/tnv3ryj.css");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+ *  Variables
+ */
+body {
+  font-family: alwyn-new-rounded-web, sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+/*
+ * Mixins
+ */
+/*
+ * Base
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(0deg, #132E52 0%, #0057C9 100%);
+  min-height: calc(100vh - 130px);
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.takeCareFeatureContainer {
+  margin-top: 120px;
+}
+
+hr {
+  border: none;
+  margin-top: 3rem;
+  border-top: 1px solid white;
+}
+
+/*
+ * Helpers
+ */
+.hide {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.grey {
+  color: #828282;
+}
+
+.basicLayout {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.buttonLayout {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 10%;
+}
+
+/*
+ * Extends
+ */
+#chatFooter, .bottomBarContainer, .headerContainer {
+  position: fixed;
+  width: 100vw;
+}
+
+button.success, button.join {
+  background-color: #008015;
+  color: #FFFFFF;
+}
+button.success:hover, button.join:hover {
+  background-color: #00460C;
+}
+
+button.danger, button.reject {
+  background-color: #aa0000;
+  color: #FFFFFF;
+}
+button.danger:hover, button.reject:hover {
+  background-color: #650000;
+}
+
+.registerContainer :not(h1), .loginContainer :not(h1) {
+  margin-bottom: 10px;
+}
+.registerContainer button + .grey, .loginContainer button + .grey {
+  margin-bottom: 5px;
+}
+
+/*
+ * Header
+ */
+.headerContainer {
+  height: 100px;
+  top: 0;
+  z-index: 5;
+  padding: 0 10px;
+  padding-top: 25px;
+  background-color: #00204A;
+  text-align: center;
+}
+
+/*
+ * Footer
+ */
+.bottomBarContainer {
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid #000000;
+}
+.bottomBarContainer footer .buttons {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.bottomBarContainer footer .buttons .footer.alarm {
+  background-color: #C98300;
+  color: #aa0000;
+}
+.bottomBarContainer footer .buttons .footer.alarm:hover {
+  background-color: #7D5200;
+}
+.bottomBarContainer footer .buttons .footer .fas.fa-exclamation {
+  margin-right: 30px;
+}
+.bottomBarContainer footer .buttons .footer .fas.fa-plus {
+  margin-left: 30px;
+}
+.bottomBarContainer footer .home {
+  position: absolute;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+/*
+ * Buttons
+ */
+button {
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  filter: drop-shadow(3px 3px 6px #000000);
+  background-color: #FFB62E;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.333rem;
+  color: #7D5200;
+}
+button:hover {
+  background-color: #C98300;
+}
+button.join {
+  width: 35%;
+}
+button.reject {
+  width: 35%;
+}
+button.link {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: #828282;
+  filter: none;
+}
+button.link:hover {
+  color: #000000;
+}
+button.footer {
+  width: 100%;
+  height: 80px;
+  border-radius: 0;
+  filter: none;
+  color: #000000;
+}
+button.home {
+  height: 90px;
+  width: 90px;
+  filter: none;
+  padding: 25px 21px;
+  border-radius: 45px;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.fa-edit, .fa-comment, .fa-arrow-circle-left {
+  color: #FFB62E;
+  cursor: pointer;
+}
+.fa-edit:hover, .fa-comment:hover, .fa-arrow-circle-left:hover {
+  color: #C98300;
+}
+
+.fa-times.fa-3x {
+  color: #828282;
+  cursor: pointer;
+}
+.fa-times.fa-3x:hover {
+  color: #aa0000;
+}
+
+/*
+ * Forms
+ */
+label {
+  display: block;
+  font-size: 1.777rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+input {
+  height: 50px;
+  width: 90vw;
+  padding-left: 20px;
+  border: 2px solid #00204A;
+  border-radius: 25px;
+  font-size: 1.333rem;
+  color: #000000;
+}
+input:focus {
+  outline: 2px solid #FFB62E;
+}
+input[type=date] {
+  color: #828282;
+}
+input[type=time] {
+  color: #828282;
+}
+input[type=checkbox] {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+input[type=checkbox]:focus {
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+  resize: none;
+  border: 2px solid #00204A;
+  border-radius: 25px;
+  font-size: 1.333rem;
+}
+textarea:focus {
+  outline: 2px solid #FFB62E;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*
+ * Event Box
+ */
+.eventBoxContainer {
+  cursor: pointer;
+  width: 90vw;
+  padding: 30px 10px;
+  border-radius: 10px;
+  background-color: #FFB62E;
+  color: #00204A;
+}
+.eventBoxContainer .text {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto 0;
+}
+.eventBoxContainer:hover {
+  background-color: #C98300;
+}
+
+/*
+ * Event Box
+ */
+.panicBoxContainer {
+  cursor: pointer;
+  width: 90vw;
+  padding: 30px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #FFB62E;
+  color: #00204A;
+}
+.panicBoxContainer .text {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto 0;
+}
+.panicBoxContainer:hover {
+  background-color: #C98300;
+}
+
+/*
+ * Event Invitation Box
+ */
+.invitationBoxContainer {
+  width: 90vw;
+}
+.invitationBoxContainer .eventBox {
+  cursor: pointer;
+  width: 100%;
+  padding: 30px 10px;
+  border-radius: 10px;
+  background-color: #FFB62E;
+  color: #00204A;
+}
+.invitationBoxContainer .eventBox .text {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto 0;
+}
+.invitationBoxContainer .eventBox:hover {
+  background-color: #C98300;
+}
+.invitationBoxContainer .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.invitationBoxContainer .buttons button {
+  border-radius: 0 0 25px 25px;
+  filter: none;
+}
+
+/*
+ * User Tags
+ */
+.userTagContainer {
+  color: #000000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-gap: 0;
+}
+.userTagContainer .picture {
+  background-color: #FFB62E;
+  padding: 9px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.userTagContainer .tag {
+  margin: 8px 0;
+  text-align: center;
+  background-color: #FFB62E;
+}
+
+/*
+ * User Tags With Picture
+ */
+.userTagContainer {
+  color: #000000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-gap: 0;
+}
+.userTagContainer .imageTest {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9edc5e55-cbc9-4b3f-a98c-4c1861c94776/d8j3ujw-e0cf0a57-8703-4ec5-b384-4bfb1461f6e6.png/v1/fill/w_800,h_800,q_80,strp/ghush_steam_profile_picture_by_thegreathushpuppy_d8j3ujw-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvOWVkYzVlNTUtY2JjOS00YjNmLWE5OGMtNGMxODYxYzk0Nzc2XC9kOGozdWp3LWUwY2YwYTU3LTg3MDMtNGVjNS1iMzg0LTRiZmIxNDYxZjZlNi5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.KuTFIgHn4BKUuIET_Vjn1BC62cX3G_efcbkVVQCSNxk");
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.userTagContainer .image {
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.userTagContainer .tag {
+  margin: 8px 0;
+  text-align: center;
+  background-color: #FFB62E;
+}
+
+/*
+ * Countdown
+ */
+.counterContainer {
+  background-color: #6DA0E3;
+  color: #00204A;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  display: grid;
+  text-align: center;
+}
+
+/*
+ * Handle users Box for invitation or deletion
+ */
+.deleteUsersContainer {
+  background-color: #00204A;
+  padding: 30px;
+}
+.deleteUsersContainer .users {
+  margin: 0 auto;
+}
+.deleteUsersContainer .users .user {
+  display: grid;
+  grid-template-columns: 80% 10%;
+  grid-gap: 10%;
+  margin: 15px 0;
+}
+.deleteUsersContainer button {
+  margin-top: 30px;
+}
+
+.addUsersContainer {
+  background-color: #00204A;
+  padding: 30px;
+}
+.addUsersContainer .users {
+  margin: 0 auto;
+}
+.addUsersContainer .users .user {
+  display: grid;
+  grid-template-columns: 80% 10%;
+  grid-gap: 10%;
+  margin: 15px 0;
+}
+.addUsersContainer button {
+  margin-top: 30px;
+}
+
+/*
+* Error Container
+*/
+.errorContainer {
+  background-color: #ff5656;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*
+* Error Container
+*/
+.successContainer {
+  background-color: #65d878;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*
+* An Image Container
+*/
+.imageContainer img {
+  width: 100%;
+}
+
+/*
+* Message Container
+*/
+.messageContainer .message {
+  width: 70%;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.messageContainer .message.left {
+  background-color: #C98300;
+  float: left;
+}
+.messageContainer .message.left p:first-child {
+  color: #000000;
+}
+.messageContainer .message.right {
+  background-color: #7D5200;
+  float: right;
+}
+
+/*
+ * Layout for design system page
+ */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.color-grid .color {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+.color-grid .color.c1 {
+  background-color: #00204A;
+}
+.color-grid .color.c2 {
+  background-color: #132E52;
+}
+.color-grid .color.c3 {
+  background-color: #0047A3;
+}
+.color-grid .color.c4 {
+  background-color: #0057C9;
+}
+.color-grid .color.c5 {
+  background-color: #6DA0E3;
+}
+.color-grid .color.c6 {
+  background-color: #7D5200;
+}
+.color-grid .color.c7 {
+  background-color: #C98300;
+}
+.color-grid .color.c8 {
+  background-color: #FFB62E;
+}
+.color-grid .color.c9 {
+  background-color: #FFFFFF;
+}
+.color-grid .color.c10 {
+  background-color: #828282;
+}
+.color-grid .color.c11 {
+  background-color: #000000;
+}
+.color-grid .color.c12 {
+  background-color: #D90000;
+}
+.color-grid .color.c13 {
+  background-color: #650000;
+}
+.color-grid .color.c14 {
+  background-color: #00A81C;
+}
+.color-grid .color.c15 {
+  background-color: #00460C;
+}
+
+/*
+ * login Page
+ */
+/*
+ * login Page
+ */
+.registerContainer button {
+  margin-bottom: 30px;
+}
+
+/*
+ * login Page
+ */
+.editAccountContainer :not(h1, h4) {
+  margin-bottom: 30px;
+}
+.editAccountContainer h4 {
+  margin-left: 15px;
+}
+
+/*
+ *  home Page
+ */
+.homeContainer h4 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.homeContainer .eventBoxContainer ~ .eventBoxContainer {
+  margin-top: 20px;
+}
+.homeContainer .invitationBoxContainer ~ .invitationBoxContainer {
+  margin-top: 20px;
+}
+
+/*
+* Event Detail Page
+*/
+.eventDetailContainer h5, .eventDetailContainer h4, .eventDetailContainer h2 {
+  margin: 10px 0;
+}
+.eventDetailContainer .buttonLayout + p {
+  margin-top: 20px;
+}
+.eventDetailContainer button {
+  margin-top: 20px;
+}
+
+/*
+ * Account Detail Page 
+ */
+.accountDetailContainer h4 {
+  margin: 10px 0;
+}
+.accountDetailContainer button {
+  margin: 20px 0;
+}
+
+/*
+* Invitation Detail Page
+*/
+.invitationDetailContainer button {
+  margin-top: 20px;
+}
+
+/*
+* Edit Event Page
+*/
+.editEventContainer :not(h3) {
+  margin: 10px 0;
+}
+
+/*
+* Meldet page
+*/
+.meldetContainer * {
+  margin: 10px 0;
+}
+.meldetContainer .categories {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.meldetContainer .categories label {
+  font-size: 1.333rem;
+}
+.meldetContainer .categories label input {
+  margin: 0;
+}
+
+/**
+* Countdown Page
+*/
+.countdownPageContainer {
+  margin-top: 200px;
+}
+.countdownPageContainer * {
+  margin-bottom: 40px;
+}
+
+/*
+* Chat page
+*/
+body .chatContainer {
+  overflow: auto;
+  margin-top: 120px;
+}
+body .chatContainer .messages:first-child {
+  margin-top: 100px;
+}
+
+#chatFooter {
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid #000000;
+  background-color: #00204A;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 75% 20%;
+  grid-gap: 15px;
+  padding: 5px;
+  padding-top: 10px;
+}
+#chatFooter button {
+  height: 85px;
+}
+
+/*
+* Panic page
+*/
+.panicPageContainer button {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=/js.00a46daa.css.map */
