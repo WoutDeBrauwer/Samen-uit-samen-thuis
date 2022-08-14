@@ -1,0 +1,72 @@
+/*
+ * Forms
+ */
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+label {
+  display: block;
+  font-size: map.get($map: vars.$typography, $key: h4);
+  padding-left: 20px;
+  position: relative;
+}
+
+input {
+  height: 50px;
+  width: 90vw;
+  padding-left: 20px;
+
+  border: 2px solid map.get($map: vars.$primary-colors, $key: 900);
+  border-radius: 25px;
+
+  font-size: map.get($map: vars.$typography, $key: h5);
+  color: map.get($map: vars.$other-colors, $key: black);
+
+  &:focus {
+    outline: 2px solid map.get($map: vars.$secondary-colors, $key: 300)
+  }
+
+  &[type="date"] {
+    color: map.get($map: vars.$other-colors, $key: grey);
+  }
+
+  &[type="time"] {
+    color: map.get($map: vars.$other-colors, $key: grey);
+  }
+
+  &[type="checkbox"] {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    &:focus {
+      outline: none;
+    }
+    }
+}
+
+textarea {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+
+  resize: none;
+
+  border: 2px solid map.get($map: vars.$primary-colors, $key: 900);
+  border-radius: 25px;
+
+  font-size: map.get($map: vars.$typography, $key: h5);
+
+  &:focus {
+    outline: 2px solid map.get($map: vars.$secondary-colors, $key: 300)
+  }
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+

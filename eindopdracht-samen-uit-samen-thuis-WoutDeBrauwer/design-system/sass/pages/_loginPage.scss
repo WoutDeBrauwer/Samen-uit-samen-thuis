@@ -1,0 +1,9 @@
+/*
+ * login Page
+ */
+
+ @use '../abstracts/extends';
+
+.loginContainer {
+  @extend %login-register-container;
+}

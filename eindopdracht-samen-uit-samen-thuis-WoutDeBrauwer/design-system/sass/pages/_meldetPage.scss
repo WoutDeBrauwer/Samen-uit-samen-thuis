@@ -1,0 +1,25 @@
+/*
+* Meldet page
+*/
+
+@use '../abstracts/variables'as vars;
+@use 'sass:map';
+
+.meldetContainer {
+  * {
+    margin: 10px 0;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+    label {
+      font-size: map.get($map: vars.$typography, $key: h5);
+      input {
+        margin: 0;
+      }
+    }
+  }
+}

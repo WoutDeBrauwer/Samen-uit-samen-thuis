@@ -1,0 +1,30 @@
+/*
+* Message Container
+*/
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+.messageContainer {
+
+  .message {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    &.left {
+      background-color: map.get($map: vars.$secondary-colors, $key: 500);
+      float: left;
+
+      p:first-child {
+        color: map.get($map: vars.$other-colors, $key: black);
+      }
+    }
+
+    &.right {
+      background-color: map.get($map: vars.$secondary-colors, $key: 900);
+      float: right;
+    }
+  }
+}

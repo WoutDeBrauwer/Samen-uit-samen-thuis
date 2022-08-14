@@ -1,0 +1,43 @@
+/*
+* Chat page
+*/
+
+@use '../abstracts/extends';
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+body {
+  .chatContainer {
+    overflow: auto;
+    margin-top: 120px;
+
+    .messages {
+
+      &:first-child {
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+#chatFooter {
+  @extend %fixed-position;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid map.get($map: vars.$other-colors, $key: black);
+
+  background-color: map.get($map: vars.$primary-colors, $key: 900);
+  height: 100px;
+
+  display: grid;
+  grid-template-columns: 75% 20%;
+  grid-gap: 15px;
+
+  padding: 5px;
+  padding-top: 10px;
+
+  button {
+    height: 85px;
+  }
+}

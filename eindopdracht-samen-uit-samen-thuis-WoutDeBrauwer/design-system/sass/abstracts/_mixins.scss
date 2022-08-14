@@ -1,0 +1,7 @@
+/*
+ * Mixins
+ */
+
+@mixin linearGradient($degree, $from, $to) {
+  background-image: linear-gradient($degree, $from 0%, $to 100%);
+}

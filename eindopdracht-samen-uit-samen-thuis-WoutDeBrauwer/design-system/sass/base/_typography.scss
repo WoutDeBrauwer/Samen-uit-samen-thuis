@@ -1,0 +1,41 @@
+/**
+ *  Typography
+ */
+
+ @use "../abstracts/variables" as vars;
+ @use 'sass:map';
+ @import url("https://use.typekit.net/tnv3ryj.css");
+
+ body {
+  font-family: vars.$font;
+  font-size: 14px;
+  color: vars.$font-color;
+ }
+ 
+h1 {
+  font-size: map.get($map: vars.$typography, $key: h1);
+}
+
+h2 {
+  font-size: map.get($map: vars.$typography, $key: h2);
+}
+
+h3 {
+  font-size: map.get($map: vars.$typography, $key: h3);
+}
+
+h4 {
+  font-size: map.get($map: vars.$typography, $key: h4);
+}
+
+h5 {
+  font-size: map.get($map: vars.$typography, $key: h5);
+}
+
+p {
+  font-size: map.get($map: vars.$typography, $key: p);
+}
+
+small {
+  font-size: map.get($map: vars.$typography, $key: small);
+}

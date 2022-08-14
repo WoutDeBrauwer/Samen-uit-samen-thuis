@@ -1,0 +1,44 @@
+/*
+ * Event Invitation Box
+ */
+
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+
+.invitationBoxContainer {
+  width: 90vw;
+
+  .eventBox {
+    cursor: pointer;
+  
+    width: 100%;
+    padding: 30px 10px;
+    border-radius: 10px;
+  
+    background-color: map.get($map: vars.$secondary-colors, $key: 300);
+    color: map.get($map: vars.$primary-colors, $key: 900);
+  
+    .text {
+      display: grid;
+      grid-template-columns: 50% 50%;
+  
+      margin: auto 0;
+    }
+  
+    &:hover {
+      background-color: map.get($map: vars.$secondary-colors, $key: 500);
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    button {
+      border-radius: 0 0 25px 25px;
+      filter: none;
+    }
+  }
+}

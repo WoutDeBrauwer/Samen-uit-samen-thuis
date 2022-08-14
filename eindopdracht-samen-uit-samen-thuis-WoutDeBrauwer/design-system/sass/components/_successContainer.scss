@@ -1,0 +1,13 @@
+/*
+* Error Container
+*/
+
+@use '../abstracts/variables'as vars;
+@use 'sass:map';
+
+.successContainer {
+  background-color: map.get($map: vars.$other-colors, $key: lightGreen);
+  color: map.get($map: vars.$other-colors, $key: black);
+  padding: 10px;
+  border-radius: 5px;
+}

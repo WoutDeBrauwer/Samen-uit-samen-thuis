@@ -1,0 +1,14 @@
+/*
+ * login Page
+ */
+
+ @use '../abstracts/extends';
+
+.registerContainer {
+  
+  @extend %login-register-container;
+
+  button {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,72 @@
+/*
+ *  Variables
+ */
+
+ @use 'sass:map';
+
+ // COLORS
+
+$primary-colors: (
+  900: #00204A,
+  700: #1F4679,
+  500: #353A41,
+  300: #5d6c80,
+  100: #BDC6D1
+);
+
+$secondary-colors: (
+  900: #1F4679,
+  500: #C98300,
+  300: #FFB62E
+);
+
+$other-colors: (
+  white: #FFFFFF,
+  grey: #828282,
+  black: #000000,
+  lightRed: #ff5656,
+  red: #aa0000,
+  darkRed: #650000,
+  lightGreen: #65d878,
+  green: #008015,
+  darkGreen: #00460C
+);
+
+
+// TYPOGRAPHY
+
+$font: alwyn-new-rounded-web, verdana;
+
+$font-size: 14px;
+
+$font-color: map.get($map: $other-colors, $key: white);
+
+$typography: (
+  h1: 4.209rem,
+  h2: 3.157rem,
+  h3: 2.369rem,
+  h4: 1.777rem,
+  h5: 1.333rem,
+  p: 1rem,
+  small: 0.75rem,
+);
+
+//ESPACIALLY FOR DESIGN SYSTEM
+
+$design-system-colors: (
+  color1: #00204A,
+  color2: #132E52,
+  color3: #22528d,
+  color4: #5C6167,
+  color5: #6DA0E3,
+  color6: #7D5200,
+  color7: #C98300,
+  color8: #FFB62E,
+  color9: #FFFFFF,
+  color10: #828282,
+  color11: #000000,
+  color12: #D90000,
+  color13: #650000,
+  color14: #00A81C,
+  color15: #00460C
+)

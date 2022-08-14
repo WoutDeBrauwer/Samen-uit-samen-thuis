@@ -1,0 +1,20 @@
+/*
+ * Countdown
+ */
+
+@use '../abstracts/variables'as vars;
+@use 'sass:map';
+
+
+ .counterContainer {
+   background-color: map.get($map: vars.$primary-colors, $key: 100);
+   color: map.get($map: vars.$primary-colors, $key: 900);
+
+   width: 160px;
+   height: 160px;
+   border-radius: 80px;
+
+   display: grid;
+
+   text-align: center
+ }

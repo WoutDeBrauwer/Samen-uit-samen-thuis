@@ -1,0 +1,23 @@
+/*
+ * Layout for design system page
+ */
+
+@use '../abstracts/variables'as vars;
+@use 'sass:map';
+ 
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+
+  .color {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+
+    @for $i from 1 to 16 {
+      &.c#{$i} {background-color: map.get($map: vars.$design-system-colors, $key: color#{$i});}
+    }
+  }
+}

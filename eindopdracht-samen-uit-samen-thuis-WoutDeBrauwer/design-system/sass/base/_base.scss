@@ -1,0 +1,30 @@
+/*
+ * Base
+ */
+
+ @use '../abstracts/mixins' as mix;
+ @use '../abstracts/variables' as vars;
+ @use 'sass:map';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+  @include mix.linearGradient(0deg, map.get($map: vars.$primary-colors, $key: 700), map.get($map: vars.$primary-colors, $key: 300));
+  min-height: calc(100vh - 130px);
+  margin-bottom: 100px;
+  margin-top: 30px;
+ }
+
+ .takeCareFeatureContainer {
+  margin-top: 120px;
+ }
+
+ hr {
+   border: none;
+   margin-top: 3rem;
+   border-top: 1px solid white;
+ }

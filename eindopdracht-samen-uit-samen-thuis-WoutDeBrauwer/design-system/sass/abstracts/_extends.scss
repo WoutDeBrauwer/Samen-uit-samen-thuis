@@ -1,0 +1,41 @@
+/*
+ * Extends
+ */
+
+@use '../abstracts/variables' as vars;
+@use 'sass:map';
+
+
+%fixed-position {
+  position: fixed;
+  width: 100vw;
+}
+
+%btn-green {
+  background-color: map.get($map: vars.$other-colors, $key: green);
+  color: map.get($map: vars.$other-colors, $key: white);
+
+  &:hover {
+    background-color: map.get($map: vars.$other-colors, $key: darkGreen);
+  }
+}
+
+%btn-red {
+  background-color: map.get($map: vars.$other-colors, $key: red);
+  color: map.get($map: vars.$other-colors, $key: white);
+
+  &:hover {
+    background-color: map.get($map: vars.$other-colors, $key: darkRed);
+  }
+}
+
+%login-register-container {
+  
+  :not(h1) {
+    margin-bottom: 10px;
+  }
+
+  button + .grey {
+    margin-bottom: 5px;
+  }
+}

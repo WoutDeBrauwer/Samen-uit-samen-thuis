@@ -1,0 +1,107 @@
+/*
+ * Buttons
+ */
+
+@use '../abstracts/variables'as vars;
+@use '../abstracts/extends';
+@use 'sass:map';
+
+button {
+  cursor: pointer;
+
+  height: 50px;
+  width: 100%;
+
+  border: none;
+  border-radius: 25px;
+  filter: drop-shadow(3px 3px 6px map.get($map: vars.$other-colors, $key: black));
+
+  background-color: map.get($map: vars.$secondary-colors, $key: 300);
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: map.get($map: vars.$typography, $key: h5);
+  color: map.get($map: vars.$secondary-colors, $key: 900);
+
+  &:hover {
+    background-color: map.get($map: vars.$secondary-colors, $key: 500);
+  }
+
+  &.success {
+    @extend %btn-green;
+  }
+
+  &.danger {
+    @extend %btn-red;
+  }
+
+  &.join {
+    @extend %btn-green;
+    width: 35%;
+  }
+
+  &.reject {
+    @extend %btn-red;
+    width: 35%;
+  }
+
+  &.link {
+    background-color: transparent;
+
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+
+    color: map.get($map: vars.$other-colors, $key: grey);
+
+    filter: none;
+
+    &:hover {
+      color: map.get($map: vars.$other-colors, $key: black);
+    }
+  }
+
+  // FOOTER BUTTONS
+
+  &.footer {
+    width: 100%;
+    height: 80px;
+    border-radius: 0;
+
+    filter: none;
+
+    color: map.get($map: vars.$other-colors, $key: black);
+  }
+
+  &.home {
+    height: 90px;
+    width: 90px;
+
+    filter: none;
+
+    padding: 25px 21px;
+    border-radius: 45px;
+    border: 2px solid map.get($map: vars.$other-colors, $key: black);
+    color: map.get($map: vars.$other-colors, $key: black);
+  }
+}
+
+.fa-edit, .fa-comment, .fa-arrow-circle-left{
+  color: map.get($map: vars.$secondary-colors, $key: 300);
+  cursor: pointer;
+
+  &:hover {
+    color: map.get($map: vars.$secondary-colors, $key: 500);
+  }
+}
+
+.fa-times {
+
+  &.fa-3x {
+    color: map.get($map: vars.$other-colors, $key: grey);
+    cursor: pointer;
+
+    &:hover {
+      color: map.get($map: vars.$other-colors, $key: red);
+    }
+  }
+}
